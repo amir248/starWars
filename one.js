@@ -30,6 +30,7 @@ window.addEventListener('keydown',(e)=>{
       display:gird;
       position:absolute;
     `;
+    
   }else{
     console.log('else');
   }

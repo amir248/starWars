@@ -10,8 +10,24 @@ window.addEventListener('keydown',(e)=>{
   // console.log(e.code);
   if(e.code=='ArrowUp'){
     console.log('ArrowUp');
+    position.bottom++;
+    console.log(position.bottom);
+    // document.querySelector('#user').style.left=`${position.left}`;
+    document.querySelector('#user').style.cssText=`
+    bottom:${position.bottom}px;
+      display:gird;
+      position:absolute;
+    `;
   }else if(e.code=="ArrowDown"){
     console.log("Down");
+    position.bottom--;
+    console.log(position.bottom);
+    // document.querySelector('#user').style.left=`${position.left}`;
+    document.querySelector('#user').style.cssText=`
+    bottom:${position.bottom}px;
+      display:gird;
+      position:absolute;
+    `;
   }else if(e.code=='ArrowLeft'){
         position.left++;
         console.log(position.left);
@@ -30,7 +46,7 @@ window.addEventListener('keydown',(e)=>{
       display:gird;
       position:absolute;
     `;
-    
+
   }else{
     console.log('else');
   }

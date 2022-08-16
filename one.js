@@ -55,3 +55,7 @@ window.addEventListener('keydown',(e)=>{
     console.log('else');
   }
 });
+window.addEventListener('load',()=>{
+  document.querySelector('img').style.cssText=`width:70px;`
+  
+})

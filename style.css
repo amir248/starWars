@@ -10,3 +10,6 @@ main{
   align-items: flex-end;
   min-height: 100vh;
 }
+img{
+  width:70px;
+}

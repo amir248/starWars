@@ -6,11 +6,12 @@ const position={
   right: 0,
   bottom: 0
 }
+let skor=30
 window.addEventListener('keydown',(e)=>{
   // console.log(e.code);
   if(e.code=='ArrowUp'){
     console.log('ArrowUp');
-    position.bottom+=10;
+    position.bottom+=skor;
     console.log(position.bottom);
     // document.querySelector('#user').style.left=`${position.left}`;
     document.querySelector('#user').style.cssText=`
@@ -21,7 +22,7 @@ window.addEventListener('keydown',(e)=>{
     `;
   }else if(e.code=="ArrowDown"){
     console.log("Down");
-    position.bottom-=10;
+    position.bottom-=skor;
     console.log(position.bottom);
     // document.querySelector('#user').style.left=`${position.left}`;
     document.querySelector('#user').style.cssText=`
@@ -31,7 +32,7 @@ window.addEventListener('keydown',(e)=>{
       position:absolute;
     `;
   }else if(e.code=='ArrowLeft'){
-        position.left-=10;
+        position.left-=skor;
         console.log(position.left);
         // document.querySelector('#user').style.left=`${position.left}`;
         document.querySelector('#user').style.cssText=`
@@ -42,7 +43,7 @@ window.addEventListener('keydown',(e)=>{
         `;
     console.log('left');
   }else if(e.code=='ArrowRight'){
-    position.left+=10;
+    position.left+=skor;
     console.log('Right');
     document.querySelector('#user').style.cssText=`
     bottom:${position.bottom}px;

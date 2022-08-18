@@ -58,5 +58,5 @@ window.addEventListener('keydown',(e)=>{
 });
 window.addEventListener('load',()=>{
   document.querySelector('img').style.cssText=`width:30px;`
-  console.log(window.innerWidth);
+  console.log(window.innerWidth+"_"+window.innerHeight);
 })

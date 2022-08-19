@@ -17,7 +17,7 @@ window.addEventListener('keydown',(e)=>{
     document.querySelector('#user').style.cssText=`
     left:${position.left}px;
     bottom:${position.bottom}px;
-      display:gird;
+      display:grid;
       position:absolute;
     `;
   }else if(e.code=="ArrowDown"){
@@ -28,7 +28,7 @@ window.addEventListener('keydown',(e)=>{
     document.querySelector('#user').style.cssText=`
     left:${position.left}px;
     bottom:${position.bottom}px;
-      display:gird;
+      display:grid;
       position:absolute;
     `;
   }else if(e.code=='ArrowLeft'){
@@ -38,7 +38,7 @@ window.addEventListener('keydown',(e)=>{
         document.querySelector('#user').style.cssText=`
         bottom:${position.bottom}px;
         left:${position.left}px;
-          display:gird;
+          display:grid;
           position:absolute;
         `;
     console.log('left');
@@ -48,7 +48,7 @@ window.addEventListener('keydown',(e)=>{
     document.querySelector('#user').style.cssText=`
     bottom:${position.bottom}px;
     left:${position.left}px;
-      display:gird;
+      display:grid;
       position:absolute;
     `;
 

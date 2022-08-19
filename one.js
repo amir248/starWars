@@ -60,11 +60,14 @@ window.addEventListener('load',()=>{
   document.querySelector('img').style.cssText=`width:30px;`
   console.log(window.innerWidth+"_"+window.innerHeight);
 });
-
-let strel=document.createElement('span');
-strel.style.cssText=`
-  display:block;
-  width:7px;
-  border-radius:50%;
-`
-document.querySelector('#user').append(strel);
+window.addEventListener('load',oK);
+function oK(){
+  let strel=document.createElement('span');
+  strel.style.cssText=`
+    display:block;
+    width:7px;
+    position:absolute;
+    border-radius:50%;
+  `
+  document.querySelector('#user').append(strel);
+}

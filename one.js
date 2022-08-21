@@ -53,7 +53,13 @@ window.addEventListener('keydown',(e)=>{
     `;
 
   }else{
-    console.log('else');
+    console.log(e.code);
+
+  }
+
+  if(e.code=='KeyF'){
+    console.log("oK");
+    oK();
   }
 });
 window.addEventListener('load',()=>{
@@ -63,11 +69,17 @@ window.addEventListener('load',()=>{
 window.addEventListener('load',oK);
 function oK(){
   let strel=document.createElement('span');
+  pos = ship.getBoundingClientRect();
   strel.style.cssText=`
     display:block;
+    background:red;
     width:7px;
+    height:7px;
     position:absolute;
     border-radius:50%;
   `
-  document.querySelector('#user').append(strel);
+  document.querySelector('main').append(strel);
+
+
+
 }

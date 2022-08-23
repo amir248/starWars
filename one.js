@@ -80,6 +80,5 @@ function oK(){
   `
   document.querySelector('main').append(strel);
 
-
-
+console.log('newCommit');
 }

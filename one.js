@@ -69,7 +69,7 @@ window.addEventListener('load',()=>{
 window.addEventListener('load',oK);
 function oK(){
   let strel=document.createElement('span');
-  pos = ship.getBoundingClientRect();
+  pos = strel.getBoundingClientRect();
   strel.style.cssText=`
     display:block;
     background:red;

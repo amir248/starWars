@@ -78,6 +78,7 @@ function oK(){
     position:absolute;
     border-radius:50%;
   `
+  /* non SHo napisano, no pokazal script Elene s nadezhdoj chto ona main podopnet */
   document.querySelector('main').append(strel);
 
 console.log('newCommit');

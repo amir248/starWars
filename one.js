@@ -70,6 +70,8 @@ window.addEventListener('load',oK);
 function oK(){
   let strel=document.createElement('span');
   pos = strel.getBoundingClientRect();
+  strel.style.top = (pos.top+55)  + "px"; 
+
   strel.style.cssText=`
     display:block;
     background:red;

@@ -59,7 +59,10 @@ window.addEventListener('keydown',(e)=>{
 
   if(e.code=='KeyF'){
     console.log("oK");
-    oK();
+    document.querySelector('img').addEventListener('click',()=>{
+      oK();
+    });
+
   }
 });
 window.addEventListener('load',()=>{
@@ -70,7 +73,7 @@ window.addEventListener('load',oK);
 function oK(){
   let strel=document.createElement('span');
   pos = strel.getBoundingClientRect();
-  strel.style.top = (pos.top+55)  + "px"; 
+  strel.style.top = (pos.top+55)  + "px";
 
   strel.style.cssText=`
     display:block;
@@ -80,7 +83,6 @@ function oK(){
     position:absolute;
     border-radius:50%;
   `
-  /* non SHo napisano, no pokazal script Elene s nadezhdoj chto ona main podopnet */
   document.querySelector('main').append(strel);
 
 console.log('newCommit');

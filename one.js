@@ -58,10 +58,10 @@ window.addEventListener('keydown',(e)=>{
   }
 
   if(e.code=='KeyF'){
-    console.log("oK");
-    document.querySelector('img').addEventListener('click',()=>{
+    window.addEventListener('keydown',()=>{
       oK();
     });
+    console.log("oK");
 
   }
 });
@@ -73,7 +73,7 @@ window.addEventListener('load',oK);
 function oK(){
   let strel=document.createElement('span');
   pos = strel.getBoundingClientRect();
-  strel.style.top = (pos.top+55)  + "px";
+  // strel.style.cssText=`position:absolute; top:50px;`; //top = (pos.top+55)  + "px"
 
   strel.style.cssText=`
     display:block;
@@ -82,6 +82,7 @@ function oK(){
     height:7px;
     position:absolute;
     border-radius:50%;
+    top:+5px;
   `
   document.querySelector('main').append(strel);
 

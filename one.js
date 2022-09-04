@@ -74,6 +74,7 @@ function oK(){
   let strel=document.createElement('span');
   pos = strel.getBoundingClientRect();
   // strel.style.cssText=`position:absolute; top:50px;`; //top = (pos.top+55)  + "px"
+  console.log(window.innerWidth+"_"+window.innerHeight);
 
   strel.style.cssText=`
     display:block;
